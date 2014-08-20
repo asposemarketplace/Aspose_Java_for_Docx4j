@@ -9,5 +9,8 @@
 	<classpathentry kind="lib" path="lib/docx4j/xmlgraphics-commons-1.5.jar"/>
 	<classpathentry kind="lib" path="lib/docx4j/xalan-2.7.1.jar"/>
 	<classpathentry kind="lib" path="lib/docx4j/serializer-2.7.1.jar"/>
+	<classpathentry kind="lib" path="lib/pptx4j/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="lib/AsposeSlides/aspose.slides-14.4.0.jar"/>
+	<classpathentry kind="lib" path="lib/pptx4j/commons-logging-1.1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
