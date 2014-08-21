@@ -12,5 +12,6 @@
 	<classpathentry kind="lib" path="lib/pptx4j/commons-lang-2.4.jar"/>
 	<classpathentry kind="lib" path="lib/AsposeSlides/aspose.slides-14.4.0.jar"/>
 	<classpathentry kind="lib" path="lib/pptx4j/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/AsposeCells/aspose-cells-7.7.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
