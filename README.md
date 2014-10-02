@@ -4,9 +4,17 @@ Aspose Java for Docx4j is a project to provide comparative source code examples 
 
 Below are some code comparisons and features of Aspose that are not available in Docx4j
 
-**Aspose.Words vs Docx4j**
+**Feature Comparisons**
 
-* [Code Comparison for Common Features in **Aspose.Words** and **Docx4j**](https://asposejavadocx4j.codeplex.com/wikipage?title=Aspose.Words%20vs%20Docx4j)
+* [Aspose.Words vs docx4j](https://github.com/asposemarketplace/Aspose_Java_for_Docx4j/wiki/Aspose.Words-vs-Docx4j)
+* [Aspose.Cells vs xlsx4j](https://github.com/asposemarketplace/Aspose_Java_for_Docx4j/wiki/Aspose.Cells-vs-Xlsx4j)
+* [Aspose.Slides vs pptx4j](https://github.com/asposemarketplace/Aspose_Java_for_Docx4j/wiki/Aspose.Slides-vs-PPTX4j)
+
+**More Features of Aspose**
+
+* Missing Feature of docx4j in Aspose
+* [Missing Feature of xlsx4j in Aspose](https://github.com/asposemarketplace/Aspose_Java_for_Docx4j/wiki/Missing-Feature-of-xlsx4j-in-Aspose)
+* [Missing Feature of pptx4j in Aspose](https://github.com/asposemarketplace/Aspose_Java_for_Docx4j/wiki/Missing-Feature-of-Pptx4j-in-Aspose)
 
 
 These examples are helpful for developers who want to compare Docx4j with Aspose OR migrate from Docx4j to Aspose.
