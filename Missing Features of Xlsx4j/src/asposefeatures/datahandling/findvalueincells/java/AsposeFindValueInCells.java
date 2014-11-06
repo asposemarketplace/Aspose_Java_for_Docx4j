@@ -1,4 +1,4 @@
-package aspose.cells;
+package asposefeatures.datahandling.findvalueincells.java;
 
 import com.aspose.cells.Cell;
 import com.aspose.cells.Cells;
@@ -11,8 +11,10 @@ public class AsposeFindValueInCells
 {
 	public static void main(String[] args) throws Exception
 	{
+		String dataPath = "src/asposefeatures/datahandling/findvalueincells/data/";
+		
 		//Instantiating a Workbook object
-		Workbook workbook = new Workbook("data/workbook.xls");
+		Workbook workbook = new Workbook(dataPath + "workbook.xls");
 		
 		//Accessing the first worksheet in the Excel file
 		Worksheet worksheet = workbook.getWorksheets().get(0);

@@ -1,4 +1,4 @@
-package aspose.cells;
+package asposefeatures.datahandling.calculatesubtotals.java;
 
 import com.aspose.cells.CellArea;
 import com.aspose.cells.Cells;
@@ -9,8 +9,9 @@ public class AsposeCalculateSubTotals
 {
 	public static void main(String[] args) throws Exception
 	{
+		String dataPath = "src/asposefeatures/datahandling/calculatesubtotals/data/";
 		//Instantiate a new workbook
-		Workbook workbook = new Workbook("data/book1.xls");
+		Workbook workbook = new Workbook(dataPath + "book1.xls");
 		
 		//Get the Cells collection in the first worksheet
 		Cells cells = workbook.getWorksheets().get(0).getCells();
@@ -27,7 +28,7 @@ public class AsposeCalculateSubTotals
 		cells.subtotal(ca, 0, ConsolidationFunction.SUM, new int[] { 1 });
 		
 		//Save the excel file
-		workbook.save("data/AsposeTotal.xls");
+		workbook.save(dataPath + "AsposeTotal_Out.xls");
 		
 		// Print message
 		System.out.println("Process completed successfully");

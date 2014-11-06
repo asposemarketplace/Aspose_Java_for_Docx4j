@@ -1,4 +1,4 @@
-package aspose.cells;
+package asposefeatures.workingwithcharts.createcharts.java;
 
 import com.aspose.cells.Cell;
 import com.aspose.cells.Cells;
@@ -14,7 +14,9 @@ public class AsposeCreateCharts
 {
 	public static void main(String[] args) throws Exception
 	{
-    	// Instantiating a Workbook object
+		String dataPath = "src/asposefeatures/workingwithcharts/createcharts/data/";
+		
+		// Instantiating a Workbook object
         Workbook workbook = new Workbook();
 
         // Obtaining the reference of the first worksheet
@@ -47,7 +49,7 @@ public class AsposeCreateCharts
         serieses.add("A1:B3", true);
 
         // Saving the Excel file
-        workbook.save("data/AsposeChart.xls");
+        workbook.save(dataPath + "AsposeChart_Out.xls");
         
         // Print message
         System.out.println("Workbook with chart is successfully created.");

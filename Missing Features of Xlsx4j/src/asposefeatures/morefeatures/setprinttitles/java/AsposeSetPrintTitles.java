@@ -1,4 +1,4 @@
-package aspose.cells;
+package asposefeatures.morefeatures.setprinttitles.java;
 
 import com.aspose.cells.FileFormatType;
 import com.aspose.cells.PageSetup;
@@ -10,6 +10,8 @@ public class AsposeSetPrintTitles
 {
 	public static void main(String[] args) throws Exception
 	{
+		String dataPath = "src/asposefeatures/morefeatures/setprinttitles/data/";
+		
 		//Instantiating a Workbook object
 		Workbook workbook = new Workbook();
 		
@@ -27,7 +29,7 @@ public class AsposeSetPrintTitles
 		pageSetup.setPrintTitleRows("$1:$2");
 		
 		// Workbooks can be saved in many formats
-		workbook.save("data/AsposePrintTitles.xlsx", FileFormatType.XLSX);
+		workbook.save(dataPath + "AsposePrintTitles_Out.xlsx", FileFormatType.XLSX);
 
 		System.out.println("Print Titles Set successfully."); // Print Message
 	}
