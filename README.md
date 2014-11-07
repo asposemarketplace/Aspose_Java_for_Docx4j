@@ -12,7 +12,7 @@ Below are some code comparisons and features of Aspose that are not available in
 
 **More Features of Aspose**
 
-* Missing Feature of docx4j in Aspose
+* [Missing Feature of docx4j in Aspose](https://github.com/asposemarketplace/Aspose_Java_for_Docx4j/wiki/Missing-Feature-of-docx4j-in-Aspose)
 * [Missing Feature of xlsx4j in Aspose](https://github.com/asposemarketplace/Aspose_Java_for_Docx4j/wiki/Missing-Feature-of-xlsx4j-in-Aspose)
 * [Missing Feature of pptx4j in Aspose](https://github.com/asposemarketplace/Aspose_Java_for_Docx4j/wiki/Missing-Feature-of-Pptx4j-in-Aspose)
 
