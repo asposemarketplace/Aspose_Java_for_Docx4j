@@ -20,7 +20,7 @@
  * @link    https://bitbucket.org/asposemarketplace/aspose-java-for-docx4j/
  */
 
-package aspose.slides;
+package asposefeatures.workingwithslides.manageslidetransition.java;
 
 import com.aspose.slides.Presentation;
 import com.aspose.slides.SaveFormat;
@@ -30,8 +30,10 @@ public class AsposeTransitions
 {
 	public static void main(String[] args)
 	{
+		String dataPath = "src/asposefeatures/workingwithslides/manageslidetransition/data/";
+		
 		//Instantiate Presentation class that represents a presentation file
-		Presentation pres = new Presentation("data/presentation.pptx");
+		Presentation pres = new Presentation(dataPath + "presentation.pptx");
 
 		//Apply circle type transition on slide 1
 		pres.getSlides().get_Item(0).getSlideShowTransition().setType(TransitionType.Circle);
@@ -43,18 +45,17 @@ public class AsposeTransitions
 		pres.getSlides().get_Item(2).getSlideShowTransition().setType(TransitionType.Zoom);
 
 		//Write the presentation to disk
-		pres.save("data/AsposeTransition.pptx",SaveFormat.Pptx);
+		pres.save(dataPath + "AsposeTransition.pptx",SaveFormat.Pptx);
 		
 		System.out.println("First Transition File is saved.");
 		
 		//==============================================================
 		
 		//Instantiate a Presentation object that represents a PPT file
-		Presentation presentation = new Presentation("data/presentation.pptx");
+		Presentation presentation = new Presentation(dataPath + "presentation.pptx");
 
 		//Apply circle type transition on slide 1
 		presentation.getSlides().get_Item(0).getSlideShowTransition().setType(TransitionType.Circle);
-
 
 		//Set the transition time of 3 seconds
 		//Set the transition time of 5 seconds
@@ -77,7 +78,7 @@ public class AsposeTransitions
 		presentation.getSlides().get_Item(2).getSlideShowTransition().setAdvanceAfterTime (7000);
 
 		//Write the presentation to disk
-		presentation.save("data/AsposeTransition2.pptx",SaveFormat.Pptx);
+		presentation.save(dataPath + "AsposeTransition2.pptx",SaveFormat.Pptx);
 		
 		System.out.println("Second Transition File is saved.");
 	}

@@ -20,41 +20,35 @@
  * @link    https://bitbucket.org/asposemarketplace/aspose-java-for-docx4j/
  */
 
-package aspose.slides;
+package asposefeatures.workingwithpresentation.slidethumbnails.java;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.FileInputStream;
 
-import com.aspose.slides.AudioPlayModePreset;
-import com.aspose.slides.AudioVolumeMode;
-import com.aspose.slides.IAudioFrame;
+import javax.imageio.ImageIO;
+
 import com.aspose.slides.ISlide;
 import com.aspose.slides.Presentation;
-import com.aspose.slides.SaveFormat;
 
-public class AsposeAudioFrame
+public class AsposeThumbnail
 {
 	public static void main(String[] args) throws Exception
 	{
-		//Instantiate Prsentation class that represents the PPTX
-		Presentation pres = new Presentation();
+		String dataPath = "src/asposefeatures/workingwithpresentation/slidethumbnails/data/";
 		
-		//Get the first slide
+		//Instantiate a Presentation class that represents the PPTX file
+		Presentation pres = new Presentation(dataPath + "presentation.pptx");
+		
+		//Access the first slide
 		ISlide sld = pres.getSlides().get_Item(0);
 		
-		//Load the wav sound file to stram
-		FileInputStream fstr = new FileInputStream(new File("C:\\logon.wav"));
+		//Create a full scale image
+		BufferedImage image = sld.getThumbnail(1f, 1f);
 		
-		//Add Audio Frame
-		IAudioFrame af = sld.getShapes().addAudioFrameEmbedded(50, 150, 100, 100, fstr);
-		
-		//Set Play Mode and Volume of the Audio
-		af.setPlayMode(AudioPlayModePreset.Auto);
-		af.setVolume(AudioVolumeMode.Loud);
-		
-		//Write the PPTX file to disk
-		pres.save("data/AsposeAudio.pptx", SaveFormat.Pptx);
-		
-		System.out.println("Audio Control Added.");
+		//Save the image to disk in JPEG format
+		ImageIO.write(image,"jpeg",new File(dataPath + "AsposeThumbnail.jpg"));
+
+        //Printing the status
+        System.out.println("Thumbnail created successfully!");
 	}
 }

@@ -20,7 +20,7 @@
  * @link    https://bitbucket.org/asposemarketplace/aspose-java-for-docx4j/
  */
 
-package aspose.slides;
+package asposefeatures.workingwithslides.managesmartart.java;
 
 import com.aspose.slides.IShape;
 import com.aspose.slides.ISlide;
@@ -33,6 +33,8 @@ public class AsposeSmartArt
 {
 	public static void main(String[] args)
 	{
+		String dataPath = "src/asposefeatures/workingwithslides/managesmartart/data/";
+		
 		//==================
 		//Adding Smart Art
 		//==================
@@ -47,7 +49,7 @@ public class AsposeSmartArt
 		ISmartArt smart = slide.getShapes().addSmartArt(0, 0, 400, 400, SmartArtLayoutType.BasicBlockList);
 		
 		//Saving presentation
-		pres.save("data/AsposeSmartArt.pptx", SaveFormat.Pptx);
+		pres.save(dataPath + "AsposeSmartArt.pptx", SaveFormat.Pptx);
 			    
 		//=====================
 		//Accessing Smart Art
