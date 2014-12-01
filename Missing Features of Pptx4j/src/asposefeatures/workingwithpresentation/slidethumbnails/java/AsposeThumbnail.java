@@ -46,7 +46,7 @@ public class AsposeThumbnail
 		BufferedImage image = sld.getThumbnail(1f, 1f);
 		
 		//Save the image to disk in JPEG format
-		ImageIO.write(image,"jpeg",new File(dataPath + "AsposeThumbnail.jpg"));
+		ImageIO.write(image,"jpeg",new File(dataPath + "AsposeThumbnail_Out.jpg"));
 
         //Printing the status
         System.out.println("Thumbnail created successfully!");

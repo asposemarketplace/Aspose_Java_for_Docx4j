@@ -68,7 +68,7 @@ public class AsposeComments
 		// Accessing the comment at index 0 for slide 1
 		String str = Comments[0].getText();
 		
-		pres.save(dataPath + "AsposeComments.pptx", SaveFormat.Pptx);
+		pres.save(dataPath + "AsposeComments_Out.pptx", SaveFormat.Pptx);
 		
 		if (Comments.length > 0)
 		{

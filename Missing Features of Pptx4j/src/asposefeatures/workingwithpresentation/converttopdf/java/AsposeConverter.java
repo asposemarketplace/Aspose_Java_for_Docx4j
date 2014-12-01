@@ -37,7 +37,7 @@ public class AsposeConverter
 		Presentation pres = new Presentation(dataPath + "presentation.ppt");
 		
 		//Saving the presentation to PDF document
-		pres.save(dataPath + "AsposeConvert.pdf", SaveFormat.Pdf);
+		pres.save(dataPath + "AsposeConvert_Out.pdf", SaveFormat.Pdf);
 		
 		//Display result of conversion.
 		System.out.println("Conversion to PDF performed successfully with default options!");
@@ -60,7 +60,7 @@ public class AsposeConverter
         opts.setCompliance(com.aspose.slides.PdfCompliance.Pdf15);
 
         //Save the presentation to PDF with specified options
-        pres.save(dataPath + "AsposeConvert2.pdf", SaveFormat.Pdf,opts);
+        pres.save(dataPath + "AsposeConvert2_Out.pdf", SaveFormat.Pdf,opts);
 
         //Display result of conversion.
         System.out.println("Conversion to PDF performed successfully with custom options!");

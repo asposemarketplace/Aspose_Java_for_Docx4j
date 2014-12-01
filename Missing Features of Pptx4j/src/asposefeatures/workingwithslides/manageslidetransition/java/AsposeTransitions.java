@@ -45,7 +45,7 @@ public class AsposeTransitions
 		pres.getSlides().get_Item(2).getSlideShowTransition().setType(TransitionType.Zoom);
 
 		//Write the presentation to disk
-		pres.save(dataPath + "AsposeTransition.pptx",SaveFormat.Pptx);
+		pres.save(dataPath + "AsposeTransition_Out.pptx",SaveFormat.Pptx);
 		
 		System.out.println("First Transition File is saved.");
 		
@@ -78,7 +78,7 @@ public class AsposeTransitions
 		presentation.getSlides().get_Item(2).getSlideShowTransition().setAdvanceAfterTime (7000);
 
 		//Write the presentation to disk
-		presentation.save(dataPath + "AsposeTransition2.pptx",SaveFormat.Pptx);
+		presentation.save(dataPath + "AsposeTransition2_Out.pptx",SaveFormat.Pptx);
 		
 		System.out.println("Second Transition File is saved.");
 	}

@@ -20,7 +20,7 @@
  * @link    https://bitbucket.org/asposemarketplace/aspose-java-for-docx4j/
  */
 
-package asposefeatures.workingwithslides.addaudioframetoslide.java;
+package asposefeatures.workingwithmediacontrols.addaudioframe.java;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -36,7 +36,7 @@ public class AsposeAudioFrame
 {
 	public static void main(String[] args) throws Exception
 	{
-		String dataPath = "src/asposefeatures/workingwithslides/addaudioframetoslide/data/";
+		String dataPath = "src/asposefeatures/workingwithmediacontrols/addaudioframe/data/";
 		
 		//Instantiate Prsentation class that represents the PPTX
 		Presentation pres = new Presentation();
@@ -55,7 +55,7 @@ public class AsposeAudioFrame
 		af.setVolume(AudioVolumeMode.Loud);
 		
 		//Write the PPTX file to disk
-		pres.save(dataPath + "AsposeAudio.pptx", SaveFormat.Pptx);
+		pres.save(dataPath + "AsposeAudio_Out.pptx", SaveFormat.Pptx);
 		
 		System.out.println("Audio Control Added.");
 	}

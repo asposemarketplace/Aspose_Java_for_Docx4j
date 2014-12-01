@@ -49,7 +49,7 @@ public class AsposeSmartArt
 		ISmartArt smart = slide.getShapes().addSmartArt(0, 0, 400, 400, SmartArtLayoutType.BasicBlockList);
 		
 		//Saving presentation
-		pres.save(dataPath + "AsposeSmartArt.pptx", SaveFormat.Pptx);
+		pres.save(dataPath + "AsposeSmartArt_Out.pptx", SaveFormat.Pptx);
 			    
 		//=====================
 		//Accessing Smart Art
