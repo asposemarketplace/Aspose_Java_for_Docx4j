@@ -19,7 +19,7 @@
     NOTICE: ORIGINAL FILE MODIFIED
  */
 
-package pptx4j.slide;
+package featurescomparison.workingwithslides.removeslide.java;
 
 import org.docx4j.openpackaging.packages.OpcPackage;
 import org.docx4j.openpackaging.packages.PresentationMLPackage;
@@ -30,7 +30,9 @@ public class Pptx4jRemoveSlide
 {
 	public static void main(String[] args) throws Exception 
 	{
-		String inputfilepath = "data/pptx4j/presentation.pptx";
+		String dataPath = "src/featurescomparison/workingwithslides/removeslide/data/";
+		
+		String inputfilepath = dataPath + "presentation.pptx";
 		
 		PresentationMLPackage presentationMLPackage = 
 			(PresentationMLPackage)OpcPackage.load(new java.io.File(inputfilepath));
@@ -42,7 +44,7 @@ public class Pptx4jRemoveSlide
 		mpp.removeSlide(rel);
 		
 		System.out.println("\n\n saving .. \n\n");
-		String outputfilepath = "data/pptx4j/RemovedSlide-Pptx4j.pptx";
+		String outputfilepath = dataPath + "RemovedSlide-Pptx4j.pptx";
 		presentationMLPackage.save(new java.io.File(outputfilepath));
 
 		System.out.println("\n\n done .. \n\n");		

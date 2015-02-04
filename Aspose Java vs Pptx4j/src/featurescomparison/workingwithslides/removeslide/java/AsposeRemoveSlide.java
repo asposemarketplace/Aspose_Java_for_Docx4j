@@ -1,4 +1,4 @@
-package pptx4j.slide;
+package featurescomparison.workingwithslides.removeslide.java;
 
 import com.aspose.slides.ISlide;
 import com.aspose.slides.Presentation;
@@ -8,8 +8,10 @@ public class AsposeRemoveSlide
 {
 	public static void main(String[] args)
 	{
+		String dataPath = "src/featurescomparison/workingwithslides/removeslide/data/";
+		
         //Instantiate a Presentation object that represents a presentation file
-		Presentation pres = new Presentation("data/pptx4j/presentation.pptx");
+		Presentation pres = new Presentation(dataPath + "presentation.pptx");
 
 		//Accessing a slide using its index in the slides collection
 		ISlide slide = pres.getSlides().get_Item(1);
@@ -21,7 +23,7 @@ public class AsposeRemoveSlide
 		pres.getSlides().removeAt(0);
 
 		//Writing the presentation file
-		pres.save("data/pptx4j/RemovedSlide-Aspose.pptx",SaveFormat.Pptx);
+		pres.save(dataPath + "RemovedSlide-Aspose.pptx",SaveFormat.Pptx);
 
         //Printing the status
         System.out.println("Slides removed successfully!");

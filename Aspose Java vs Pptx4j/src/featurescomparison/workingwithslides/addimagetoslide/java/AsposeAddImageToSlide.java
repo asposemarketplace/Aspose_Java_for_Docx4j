@@ -1,4 +1,4 @@
-package pptx4j.images;
+package featurescomparison.workingwithslides.addimagetoslide.java;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -19,6 +19,8 @@ public class AsposeAddImageToSlide
 {
 	public static void main(String[] args)
 	{
+		String dataPath = "src/featurescomparison/workingwithslides/addimagetoslide/data/";
+		
 		//Instantiate Presentation class that represents the PPTX
 		Presentation pres = new Presentation();
 
@@ -29,7 +31,7 @@ public class AsposeAddImageToSlide
 		IPPImage imgx = null;
 
 		try{
-		    imgx = pres.getImages().addImage(new FileInputStream(new File("data/pptx4j/greentick.png")));
+		    imgx = pres.getImages().addImage(new FileInputStream(new File(dataPath + "greentick.png")));
 		}
 		catch(IOException e){}
 
@@ -37,6 +39,7 @@ public class AsposeAddImageToSlide
 		sld.getShapes().addPictureFrame(ShapeType.Rectangle, 50, 150, imgx.getWidth(), imgx.getHeight(), imgx);
 
 		//Write the PPTX file to disk
-		pres.save("data/pptx4j/ImageInSlide-Aspose.pptx", SaveFormat.Pptx);
+		pres.save(dataPath + "ImageInSlide-Aspose.pptx", SaveFormat.Pptx);
+		System.out.println("Done.");
 	}
 }

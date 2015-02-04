@@ -19,7 +19,7 @@
     NOTICE: ORIGINAL FILE MODIFIED
  */
 
-package pptx4j.images;
+package featurescomparison.workingwithslides.addimagetoslide.java;
 
 import java.io.File;
 
@@ -43,8 +43,10 @@ public class Pptx4jAddImageToSlide
 
 		final Logger log = LoggerFactory.getLogger(Pptx4jAddImageToSlide.class);
 		
+		String dataPath = "src/featurescomparison/workingwithslides/addimagetoslide/data/";
+		
 		// Where will we save our new .pptx?
-		String outputfilepath = "data/pptx4j/ImageInSlide-Pptx4j.pptx";
+		String outputfilepath = dataPath + "ImageInSlide-Pptx4j.pptx";
 		
 		// Create skeletal package, including a MainPresentationPart and a SlideLayoutPart
 		PresentationMLPackage presentationMLPackage = PresentationMLPackage.createPackage(); 
@@ -63,7 +65,7 @@ public class Pptx4jAddImageToSlide
 				new PartName("/ppt/slides/slide1.xml"));
 				
 		// Add image part
-		File file = new File("data/pptx4j/greentick.png" );
+		File file = new File(dataPath + "greentick.png" );
         BinaryPartAbstractImage imagePart 
         	= BinaryPartAbstractImage.createImagePart(presentationMLPackage, slidePart, file);
 		
@@ -134,7 +136,4 @@ public class Pptx4jAddImageToSlide
 	          + "</a:prstGeom>"
 	        + "</p:spPr>"
 	      + "</p:pic>";
-
-	
-
 }

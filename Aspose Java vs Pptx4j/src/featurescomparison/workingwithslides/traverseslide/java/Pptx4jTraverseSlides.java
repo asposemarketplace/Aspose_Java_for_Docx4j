@@ -18,7 +18,7 @@
 
     NOTICE: ORIGINAL FILE MODIFIED
  */
-package pptx4j.slide;
+package featurescomparison.workingwithslides.traverseslide.java;
 
 import java.util.List;
 
@@ -74,15 +74,9 @@ public class Pptx4jTraverseSlides extends AbstractSample
 		 * 
 		 * dist/xmlgraphics-commons-1.4.jar:dist/commons-logging-1.1.1.jar
 		 */
-
-		try
-		{
-			getInputFilePath(args);
-		}
-		catch (IllegalArgumentException e)
-		{
-			inputfilepath = "data/pptx4j/pptx-basic.xml";
-		}
+		String dataPath = "src/featurescomparison/workingwithslides/traverseslide/data/";
+		
+		inputfilepath = dataPath + "pptx-basic.xml";
 
 		PresentationMLPackage pMLPackage = (PresentationMLPackage) OpcPackage
 				.load(new java.io.File(inputfilepath));
@@ -187,10 +181,8 @@ public class Pptx4jTraverseSlides extends AbstractSample
 			{
 				return TraversalUtil.getChildrenImpl(o);
 			}
-
 		}
-
 		);
-
+		System.out.println("Done...");
 	}
 }

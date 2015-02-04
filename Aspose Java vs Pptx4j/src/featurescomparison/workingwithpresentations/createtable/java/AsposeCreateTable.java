@@ -1,4 +1,4 @@
-package pptx4j.table;
+package featurescomparison.workingwithpresentations.createtable.java;
 
 import java.awt.Color;
 
@@ -18,6 +18,8 @@ public class AsposeCreateTable
 {
 	public static void main(String[] args)
 	{
+		String dataPath = "src/featurescomparison/workingwithpresentations/createtable/data/";
+		
 		//Instantiate Presentation class that represents PPTX file
 	    Presentation pres = new Presentation();
 
@@ -60,7 +62,7 @@ public class AsposeCreateTable
 	    tbl.getRows().get_Item(0).get_Item(0).getTextFrame().setText("Merged Cells");
 
 	    //Save PPTX to Disk
-	    pres.save("data/pptx4j/Tables-Aspose.pptx", SaveFormat.Pptx);
+	    pres.save(dataPath + "Tables-Aspose.pptx", SaveFormat.Pptx);
 	    
 	    System.out.println("Table Created Successfully...");
 	}

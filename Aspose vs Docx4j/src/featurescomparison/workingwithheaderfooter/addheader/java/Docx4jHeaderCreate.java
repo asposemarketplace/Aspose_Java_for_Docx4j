@@ -136,17 +136,7 @@ public class Docx4jHeaderCreate {
 		);
 		return hdr;
 	}
-	
-//	public static P getP() {
-//		P headerP = objectFactory.createP();
-//		R run1 = objectFactory.createR();
-//		Text text = objectFactory.createText();
-//		text.setValue("123head123");
-//		run1.getRunContent().add(text);
-//		headerP.getParagraphContent().add(run1);
-//		return headerP;
-//	}
-	
+		
 	public static org.docx4j.wml.P newImage( WordprocessingMLPackage wordMLPackage,
 			Part sourcePart,
 			byte[] bytes,

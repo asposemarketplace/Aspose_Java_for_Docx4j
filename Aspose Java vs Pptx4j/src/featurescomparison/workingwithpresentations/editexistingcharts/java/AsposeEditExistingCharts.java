@@ -1,4 +1,4 @@
-package pptx4j.charts;
+package featurescomparison.workingwithpresentations.editexistingcharts.java;
 
 import com.aspose.slides.ChartType;
 import com.aspose.slides.IChart;
@@ -12,8 +12,10 @@ public class AsposeEditExistingCharts
 {
 	public static void main(String[] args)
 	{
+		String dataPath = "src/featurescomparison/workingwithpresentations/editexistingcharts/data/";
+		
 		//Instantiate Presentation class that represents PPTX file
-		Presentation pres = new Presentation("data/pptx4j/AsposeChart.pptx");
+		Presentation pres = new Presentation(dataPath + "AsposeChart.pptx");
 
 		//Access first slide
 		ISlide sld = pres.getSlides().get_Item(0);
@@ -65,7 +67,7 @@ public class AsposeEditExistingCharts
 		chart.setType(ChartType.ClusteredCylinder);
 
 		// Save presentation with chart
-		pres.save("data/pptx4j/ChartModified-Aspose.pptx", SaveFormat.Pptx);	
+		pres.save(dataPath + "ChartModified-Aspose.pptx", SaveFormat.Pptx);	
 		System.out.println("Done");
 	}
 }

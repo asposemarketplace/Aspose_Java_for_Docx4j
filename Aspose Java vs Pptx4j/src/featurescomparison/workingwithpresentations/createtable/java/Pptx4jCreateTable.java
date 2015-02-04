@@ -19,7 +19,7 @@
     NOTICE: ORIGINAL FILE MODIFIED
  */
 
-package pptx4j.table;
+package featurescomparison.workingwithpresentations.createtable.java;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
@@ -55,10 +55,12 @@ public class Pptx4jCreateTable
 {
 	protected static Logger log = LoggerFactory.getLogger(Pptx4jCreateTable.class);
 		
-	public static void main(String[] args) throws Exception {
-
+	public static void main(String[] args) throws Exception 
+	{
+		String dataPath = "src/featurescomparison/workingwithpresentations/createtable/data/";
+		
 		// Where will we save our new .ppxt?
-		String outputfilepath = "data/pptx4j/Tables-Pptx4j.pptx";
+		String outputfilepath = dataPath + "Tables-Pptx4j.pptx";
 		
 		// Create skeletal package, including a MainPresentationPart and a SlideLayoutPart
 		PresentationMLPackage presentationMLPackage = PresentationMLPackage.createPackage(); 
@@ -88,7 +90,6 @@ public class Pptx4jCreateTable
 		presentationMLPackage.save(new java.io.File(outputfilepath));
 
 		System.out.println("\n\n done .. saved " + outputfilepath);
-		
 	}	
 	
 	public static CTGraphicalObjectFrame getTable() throws JAXBException {

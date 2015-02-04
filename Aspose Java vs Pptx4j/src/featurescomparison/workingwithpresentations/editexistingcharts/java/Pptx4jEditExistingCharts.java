@@ -1,4 +1,4 @@
-package pptx4j.charts;
+package featurescomparison.workingwithpresentations.editexistingcharts.java;
 
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
@@ -43,10 +43,12 @@ public class Pptx4jEditExistingCharts
 	 * @param args
 	 * @throws Docx4JException 
 	 */
-	public static void main(String[] args) throws Docx4JException {
+	public static void main(String[] args) throws Docx4JException 
+	{	
+		String dataPath = "src/featurescomparison/workingwithpresentations/editexistingcharts/data/";
 		
 		// Input file
-		String inputfilepath = "data/pptx4j/pptx-chart.pptx";
+		String inputfilepath = dataPath + "pptx-chart.pptx";
 		
 		// The names of the parts which will be edited
 		// Alter these to match what is in your input pptx
@@ -56,7 +58,7 @@ public class Pptx4jEditExistingCharts
 		String xlsPartName = "/ppt/embeddings/Microsoft_Excel_Sheet1.xlsx";
 		
 		// Output file
-		String outputfilepath = "data/pptx4j/ChartModified-Pptx4j.pptx";
+		String outputfilepath = dataPath + "ChartModified-Pptx4j.pptx";
 		
 		// Values to change
 		Random rand = new Random();
