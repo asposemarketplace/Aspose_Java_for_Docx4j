@@ -41,13 +41,13 @@ public class AsposeChartToImage
 		cells.get("A7").setValue("Spain");
 		cells.get("A8").setValue("Portugal");
 		cells.get("B1").setValue("Sale");
-		cells.get("B2").setValue(70000);
-		cells.get("B3").setValue(55000);
-		cells.get("B4").setValue(30000);
-		cells.get("B5").setValue(40000);
-		cells.get("B6").setValue(35000);
-		cells.get("B7").setValue(32000);
-		cells.get("B8").setValue(10000);
+		cells.get("B2").putValue(70000);
+		cells.get("B3").putValue(55000);
+		cells.get("B4").putValue(30000);
+		cells.get("B5").putValue(40000);
+		cells.get("B6").putValue(35000);
+		cells.get("B7").putValue(32000);
+		cells.get("B8").putValue(10000);
 
 		//Create chart
 		int chartIndex = sheet.getCharts().add(ChartType.COLUMN, 12, 1, 33, 12);

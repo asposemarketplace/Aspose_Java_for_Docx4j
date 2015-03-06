@@ -26,17 +26,17 @@ public class AsposeCreateCharts
         // Adding some sample value to cells
         Cells cells = sheet.getCells();
         Cell cell = cells.get("A1");
-        cell.setValue(50);
+        cell.putValue(50);
         cell = cells.get("A2");
-        cell. setValue (100);
+        cell. putValue (100);
         cell = cells.get("A3");
-        cell.setValue(150);
+        cell.putValue(150);
         cell = cells.get("B1");
-        cell.setValue(4);
+        cell.putValue(4);
         cell = cells.get("B2");
-        cell.setValue(20);
+        cell.putValue(20);
         cell = cells.get("B3");
-        cell.setValue(50);
+        cell.putValue(50);
 
         ChartCollection charts = sheet.getCharts();
 
