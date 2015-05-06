@@ -20,7 +20,7 @@
  * @link    https://bitbucket.org/asposemarketplace/aspose-java-for-docx4j/
  */
 
-package asposefeatures.workingwithslides.managesmartart.java;
+package asposefeatures.workingwithsmartart.managesmartart.java;
 
 import com.aspose.slides.IShape;
 import com.aspose.slides.ISlide;
@@ -33,7 +33,7 @@ public class AsposeSmartArt
 {
 	public static void main(String[] args)
 	{
-		String dataPath = "src/asposefeatures/workingwithslides/managesmartart/data/";
+		String dataPath = "src/asposefeatures/workingwithsmartart/managesmartart/data/";
 		
 		//==================
 		//Adding Smart Art
