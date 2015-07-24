@@ -2,10 +2,9 @@
 
 For further releases and updates, please visit and follow these new repositories:
 
-* [Aspose.Words Java for Apache POI](https://github.com/asposewords/Aspose_Words_Java)
-* [Aspose.Cells Java for Apache POI](https://github.com/asposecells/Aspose_Cells_Java)
-* [Aspose.Slides Java for Apache POI](https://github.com/asposeslides/Aspose_Slides_Java)
-* [Aspose.Email Java for Apache POI](https://github.com/asposeemail/Aspose_Email_Java)
+* [Aspose.Words Java for Docx4j](https://github.com/asposewords/Aspose_Words_Java)
+* [Aspose.Cells Java for Xlsx4j](https://github.com/asposecells/Aspose_Cells_Java)
+* [Aspose.Slides Java for Pptx4j](https://github.com/asposeslides/Aspose_Slides_Java)
 
 For documentation, please visit [Aspose Docs](http://www.aspose.com/docs).
 
